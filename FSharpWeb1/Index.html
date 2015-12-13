@@ -11,13 +11,17 @@
     <link href="./Content/bootstrap-theme.min.css" rel="stylesheet">
     <link href="./Content/Site.css" rel="stylesheet">
     <!-- javascript file refs here -->
+   
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>
     <script src="./Scripts/bootstrap.js"></script>
-
-
-
+    <!--<script src="./Scripts/npm.js"></script>-->
 </head>
 <body>
+    
 
+
+
+    <!-- All Cars Table Section -->
     <div class="container">
         <h2 class="sub-header">All Cars</h2>
         <table id="cars" class="table">
@@ -34,8 +38,32 @@
             <tbody /><!-- data that is grabbed from main.js script is put here -->
         </table>
     </div>
+    <!--END  All Cars Table Section -->
 
-    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>
+    <!-- All Shoes Table Section -->
+    <div class="container">
+        <h2 class="sub-header">All Shoes</h2>
+        <table id="shoes" class="table">
+            <thead>
+                <tr>
+                    <td>#</td>
+                    <td>Brand</td>
+                    <td>Style</td>
+                    <td>Color</td>
+                    <td>Price</td>
+                    <td>Quality</td>
+                    <td>Popularity</td>
+                    <td>Want Meter</td>
+                </tr>
+            </thead>
+            <tbody /><!-- data that is grabbed from main.js script is put here -->
+        </table>
+    </div>
+    <!--END  All Shoes Table Section -->
+
+
+    <!--<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>-->
+    <!-- Call the main.js script now -->
     <script src="./Scripts/main.js"></script>
 </body>
 </html>

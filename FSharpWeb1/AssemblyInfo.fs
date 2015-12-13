@@ -4,16 +4,16 @@ open System.Runtime.CompilerServices
 
 
 [<assembly: AssemblyTitle("FSharpWeb1")>]
-[<assembly: AssemblyDescription("")>]
+[<assembly: AssemblyDescription("Shoe shopping social application")>]
 [<assembly: AssemblyConfiguration("")>]
-[<assembly: AssemblyCompany("")>]
+[<assembly: AssemblyCompany("The Romero Agency")>]
 [<assembly: AssemblyProduct("")>]
-[<assembly: AssemblyCopyright("")>]
-[<assembly: AssemblyTrademark("")>]
+[<assembly: AssemblyCopyright("The Romero Agency")>]
+[<assembly: AssemblyTrademark("The Romero Agency")>]
 
 // The assembly version has the format {Major}.{Minor}.{Build}.{Revision}
 
-[<assembly: AssemblyVersion("1.0.0.0")>]
+[<assembly: AssemblyVersion("1.0.010")>]
 
 //[<assembly: AssemblyDelaySign(false)>]
 //[<assembly: AssemblyKeyFile("")>]
