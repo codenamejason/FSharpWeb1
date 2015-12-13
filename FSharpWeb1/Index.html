@@ -11,40 +11,27 @@
     <link href="./Content/bootstrap-theme.min.css" rel="stylesheet">
     <link href="./Content/Site.css" rel="stylesheet">
     <!-- javascript file refs here -->
-   
+
     <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>
     <script src="./Scripts/bootstrap.js"></script>
     <!--<script src="./Scripts/npm.js"></script>-->
+
 </head>
-<body>
-    
+ <body>
 
-
-
-    <!-- All Cars Table Section -->
-    <div class="container">
-        <h2 class="sub-header">All Cars</h2>
-        <table id="cars" class="table">
-            <thead>
-                <tr>
-                    <td>#</td>
-                    <td>Make</td>
-                    <td>Model</td>
-                    <td>Year</td>
-                    <td>Miles</td>
-                    <td>Price</td>
-                </tr>
-            </thead>
-            <tbody /><!-- data that is grabbed from main.js script is put here -->
-        </table>
-    </div>
-    <!--END  All Cars Table Section -->
+     <div>
+         <ul id="messages"></ul>
+         <form action="">
+             <input id="m" autocomplete="off" /><button>Send</button>
+         </form>
+     </div>
 
     <!-- All Shoes Table Section -->
     <div class="container">
-        <h2 class="sub-header">All Shoes</h2>
+        <h2 class="sub-header">My Shoes</h2>
         <table id="shoes" class="table">
             <thead>
+                <tr></tr>
                 <tr>
                     <td>#</td>
                     <td>Brand</td>
@@ -53,7 +40,7 @@
                     <td>Price</td>
                     <td>Quality</td>
                     <td>Popularity</td>
-                    <td>Want Meter</td>
+                    <td>Want It Meter</td>
                 </tr>
             </thead>
             <tbody /><!-- data that is grabbed from main.js script is put here -->
@@ -65,5 +52,23 @@
     <!--<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>-->
     <!-- Call the main.js script now -->
     <script src="./Scripts/main.js"></script>
+
+     <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+     <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+     <script>
+      var socket = io();
+      $('form').submit(function(){
+        socket.emit('chat message', $('#m').val());
+        $('#m').val('');
+        return false;
+      });
+      socket.on('chat message', function(msg){
+        $('#messages').append($('<li>').text(msg));
+      });
+     </script>
+
+
+
+
 </body>
 </html>

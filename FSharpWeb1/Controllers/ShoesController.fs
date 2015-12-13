@@ -11,8 +11,8 @@ type ShoesController() =
     inherit ApiController()
     // The values themselves. 
     // TODO: grab values from a database or json file
-    let values = [| { Brand = "Jimmy Choo"; Style  = "Heel"; Color = "Black"; Price = "5200"; Quality = "8/10"; Popularity = "7/10"; WantItMeter = "75/100" };
-                    { Brand = "Steve Madden"; Style = "Flat"; Color = "Blue"; Price = "3500"; Quality = "9/10"; Popularity = "6/10"; WantItMeter = "80/100" } 
+    let values = [| { Brand = "Jimmy Choo"; Style  = "Heel"; Color = "Black"; Price = "5200"; Quality = "8/10"; Popularity = "7/10"; WantItMeter = "75/100"; };
+                    { Brand = "Steve Madden"; Style = "Flat"; Color = "Blue"; Price = "3500"; Quality = "9/10"; Popularity = "6/10"; WantItMeter = "80/100"; } 
                  |]
 
     /// Gets all values.

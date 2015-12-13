@@ -1,7 +1,7 @@
-﻿//
-//
-//
-//
+﻿
+/* Author: Jason Romero - codenamejason
+ *  Copyright (c) 2015 Romero Agency
+ */
 //
 
 
@@ -22,11 +22,11 @@ $(function () {
     var uri = 'api/shoes';
 
     $.getJSON(uri)
-        .done(function (data) {
-            $.each(data, function (key, item) {
-                $('<tr><td>' + (key + 1) + '</td><td>' + item.brand + '</td><td>' + item.style + '</td><td>' + item.color
-                    + '</td><td>' + item.price + '</td><td>' + item.quality + '</td><td>' + item.popularity + '</td><td>'
-                    + item.wantitmeter + '</td></tr>')
+        .done(function (data1) {
+            $.each(data1, function (key1, item1) {
+                $('<tr><td>' + (key1 + 1) + '</td><td>' + item1.brand + '</td><td>' + item1.style + '</td><td>' + item1.color
+                    + '</td><td>' + item1.price + '</td><td>' + item1.quality + '</td><td>' + item1.popularity + '</td><td>'
+                    + item1.wantitmeter + '</td></tr>')
                     .appendTo($('#shoes tbody'));
             });
         });
